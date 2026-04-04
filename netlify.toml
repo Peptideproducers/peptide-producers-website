@@ -1,0 +1,38 @@
+[build]
+  publish = "dist"
+  functions = "netlify/functions"
+  
+[[redirects]]
+  from = "/.netlify/functions/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+  
+[[redirects]]
+  from = "/track-order"
+  to = "/#/track-order"
+  status = 301
+  
+[[redirects]]
+  from = "/cart"
+  to = "/#/cart"
+  status = 301
+  
+[[redirects]]
+  from = "/checkout"
+  to = "/#/checkout"
+  status = 301
+  
+[[redirects]]
+  from = "/products"
+  to = "/#/products"
+  status = 301
+  
+[[redirects]]
+  from = "/products/*"
+  to = "/#/products/:splat"
+  status = 301
+  
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
